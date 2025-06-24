@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Hello World</h1>
+
+    <!-- inline scripting -->
+    <button onclick="alert('Hello World!')">Click me</button>
+    <br>
+    <!-- Internal scripting and created a webpage using console and alert-->
+    <script>
+        console.log("My first day of JS");
+        alert("Day 1 Completed");
+    </script>
+
+    <!-- External scripting -->
+    <script src="script.js"></script>
+
+    <!-- Printing Hello World in 5 different ways -->
+    <script>
+        function HelloWorld() {
+            console.log("Hello World");
+            console.info("Hello World");
+            console.warn("Hello World");
+            console.error("Hello World");
+            console.debug("Hello World");
+        }
+    </script>
+    <br>
+    <button onclick="HelloWorld()">Click</button>
+
+
+
+</body>
+
+</html>
