@@ -1,0 +1,33 @@
+let a=50;
+let b=10;
+
+console.log(`a = ${a}`);
+console.log(`b = ${b}`);
+console.log(`a+b=${a+b}`);
+console.log(`a-b=${a-b}`);
+console.log(`a*b=${a*b}`);
+console.log(`a/b=${a/b}`);
+console.log(`a%b=${a%b}`);
+console.log(`unary plus =${+b}`);
+console.log(`unary minus=${+-b}`);
+console.log(`increment=${++a}`);
+console.log(`decrement=${--b}`);
+console.log(`a==b: ${a==b}`);
+console.log(`a!=b: ${a!=b}`);
+console.log(`a===b: ${a===b}`);
+console.log(`a>b=${a>b}`);
+console.log(`a>=b=${a>=b}`);
+console.log(`a<b=${a<b}`);
+console.log(`a<=b=${a<=b}`);
+console.log(`a&&b=${a&&b}`);
+console.log(`a||b=${a||b}`);
+console.log(`!a=${!a}`);
+console.log(`!b=${!b}`);
+console.log(`a&b=${a&b}`);
+console.log(`a|b=${a|b}`);
+console.log(`a^b=${a^b}`);
+console.log(`~a=${~a}`);
+console.log(`~b=${~b}`);
+console.log(`a,b=50 10`);
+console.log(`a+b=${"a"+"b"}`);
+

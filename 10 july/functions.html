@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee behavior="" direction="">Please open console to see JS output</marquee>
+
+    <h4><b>Functions:</b></h4>
+    <p>A certain block of code executes over the time and it can be reused.</p>
+    <ol><li><b>Built-in Functions:</b></li>
+        <p>Specified by language itself.</p>
+    <li><b>User defined Functions:</b></li>
+    <p>Created by users/developers</p>
+</ol>
+
+    <h4><b>Scopes:</b></h4>
+    <p>It is a lifetime of variables,functions,where we can access the variables.</p>
+    <ol>
+        <li>Global Scope</li>
+        <p>We can access anywhere in our source code.</p>
+        <li>
+            Local Scope
+            <p>The variable which created indide the block,functions,conditional statements,lopps has local scope.</p>
+            <ol>
+                <li>Function Scope</li>
+                <li>Block Scope</li>
+            </ol>
+        </li>
+    </ol>
+
+<script>
+    function number(){ // User defined Function
+        console.log("Inside the function"); // Built-in Function
+    }
+    number();
+
+    let str1="Global Scope Variable"; // Global Scope
+    console.log(str1);
+    if(true){console.log(str1)}
+
+    function f(){ // Local Scope
+        let str1="Local Scope Variable";
+        console.log(str1);
+    }
+    f();
+    console.log(str1);
+
+    if(true){ //Block Scope
+        let str1="Block Scope Variable";
+        console.log(str1);
+    }
+
+    function sum(){
+        let str1="Function Scope Variable"; // Function Scope Variable
+        console.log(str1); 
+    }
+    sum();
+    
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee behavior="" direction="">Please open console to see JS output</marquee>
+
+    <h4><b>Variable Shadowing:</b></h4>
+    <p>Accessing variables when they are defined in both Local and Global Scope.</p><br>
+    <h4><b>Hoisting:</b></h4>
+    <p>It is a behavior of JS where the declarations of variables,functiions,classes moves to the top of their scope.</p>
+
+    <script>
+        var op="Variable Shadowing";
+        function f(){
+            var op="Variable Shadowing";
+            console.log(op);
+        }
+        f();
+        console.log(op);
+
+        console.log(num);
+        var num=50;
+        console.log("We get output as UNDEFINED because of Hoisting.")
+    </script>
+</body>
+</html>

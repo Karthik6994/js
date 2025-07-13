@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee behavior="" direction="">Please open console to see JS output</marquee>
+
+    <h4><b>Input from user:</b></h4>
+    <p>We will take input from user using prompt() keyword</p>
+    <p>Ex: let num=prompt("Enter a number: ");</p>
+    <hr>
+    <h4><b>String Literal:</b></h4>
+    <p>We use String Literals to combine both string and variables/variable values and show them in the output combined.</p>
+    <p>Ex: console.log(`Given input is: ${num}`);</p>
+    <hr>
+    <h4><b>Ternary Operator:</b></h4>
+    <p>It is a simplified version of if-else.</p>
+    <p>Syntax: (Condition) ? "True Statements : "False Statements"</p>
+    <p>Ex: </p>
+    <hr>
+    <h4>Type Conversions:</h4>
+    <ol>
+        <li><b>Implicit Converison</b></li>
+        <p>Conversion is done by language itself</p>
+        <li><b>Explicit Conversion</b></li>
+        <p>Conversion is done manually</p>
+        <p><b>Ex:</b></p>
+        <p>Console.log("10"+10);</p>
+        <p>Output is 1010</p>
+    </ol>
+    <script>
+        let num=prompt("Enter a number: ");
+        console.log(`Given input is: ${num}`); //This is an example for string literal
+    </script>
+    <script>
+        console.log(`Explicit conversion: ${"10"+10}`);
+        console.log(`Implicit conversion: ${"10"-10}`);
+    </script>
+    <script>
+        let numm=10;
+        (numm>5) ? console.log("True"):console.log("False")
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>

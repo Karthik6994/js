@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <marquee behavior="" direction="">Please open console to see JS output</marquee>
+
+    <h4>Types of Control Flow:</h4>
+    <ol>
+        <li><b>Conditional Statements:</b></li>
+        <ol>
+            <li>IF</li>
+        
+            <li>IF-ELSE</li>
+            <li>ELSE-IF</li>
+            <li>NESTED</li>
+            <li>SWITCH CASE</li>
+        </ol>
+        <li><b>Loops:</b></li>
+        <ol>
+            <li>For</li>
+            <li>While</li>
+            <li>Do-While</li>
+        </ol>
+    </ol>
+    <script>
+        let num=300;
+        if(num>200){
+            console.log(`output for if condition: ${num}`);
+        }
+
+        let n=2;
+        if(n==2){
+            console.log("output for if-else: true")
+        }
+        else{
+            console.log("output for if-else: false")
+        }
+
+        let numm=20;
+        if(numm>200){
+            console.log(numm);
+        }else if(numm<200){
+            console.log("output for else-if condition: num is less than 200");
+        }
+
+        let input=2;
+        switch(input){
+            case 1:
+                console.log(`switchcase output is: ${input}`)
+                break;
+            case 2:
+                console.log(`switchcase output is: ${input}`)
+                break;
+            case 3:
+                console.log(`switchcase output is: ${input}`)
+                break;
+        }
+
+        for(i=1;i<=3;i++){
+            console.log("inside for loop");
+        }
+
+        let l=1;
+        while(l<=3){
+            console.log("Inside while loop");
+            l++;
+        }
+
+        let dow=3;
+        do {
+            console.log("Inside do-while loop");
+            dow--;
+        } while (dow>=1);
+    </script>
+</body>
+
+</html>

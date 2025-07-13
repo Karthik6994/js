@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <marquee behavior="" direction="">Please open console to see JS output</marquee>
+    <h3><b>Document Object Model (DOM):</b></h3>
+    <p>It is not a part of JS language, It is provided by some external host. Used to interact with webpages.</p>
+
+    <h4>Accessing HTML Elements Using DOM:</h4>
+    <ol>
+        <li>Class</li>
+        <li>Id</li>
+        <li>Tag Name</li>
+        <li>Query Selector</li>
+        <li>Query SelectorAll</li>
+    </ol>
+
+    <h4>Accessing and Modifying contents of HTML Elements Using DOM:</h4>
+    <ol>
+        <li>innnerText</li>
+        <li>innerHTML</li>
+        <li>textContent</li>
+    </ol>
+    
+    <h3 id="#abc">Dynamic Creation:</h3>
+    <p class="abc">It is used to create elements using JS in HTML.</p>
+
+    <h3>Styling in JS:</h3>
+    <p>Used to Style elements using JS</p>
+
+    <script>
+        console.log("Using TagName:")
+        console.log(document.getElementsByTagName("h4"));
+        console.log("Using ClassName:")
+        console.log(document.getElementsByClassName("abc"));
+        console.log("Using id:")
+        console.log(document.getElementById("#abc"))
+        console.log("Using Query Selector:");
+        let p=document.querySelector("p");
+        console.log(p)
+        console.log("Using querySelectorAll:");
+        let pAll=document.querySelectorAll("li");
+        console.log(pAll)
+        
+
+        console.log("Using innnerText:");
+        let inn = document.getElementById("#abc").innerText;
+        console.log(inn);
+
+        console.log("Using innnerHTML:");
+        let i = document.getElementById("#abc").innerHTML;
+        console.log(i);
+
+        console.log("Using textContent:");
+        let txt = document.getElementById("#abc").textContent;
+        console.log(txt);
+
+        let tag= document.createElement("p");
+        tag.textContent="Dynamic Creation"
+        console.log(tag);
+        
+        tag.style.color="red";
+
+        
+    </script>
+</body>
+
+</html>
